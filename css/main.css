@@ -7,6 +7,7 @@ colour */
   --white: #e8e8e8;
   --deepred: #d43333;
   --red: #d53535;
+  --gray: #615e5e;
 }
 
 * {
@@ -39,7 +40,7 @@ footer {
 }
 
 #top-nav {
-  background: var(--red);
+  background: var(--black);
   overflow: hidden;
   position: sticky;
   top: 0;
@@ -47,7 +48,7 @@ footer {
 
 #top-nav a {
   float: left;
-  color: var(--black);
+  color: var(--white);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -55,7 +56,7 @@ footer {
 }
 
 #top-nav a:hover {
-  background: var(--darkered);
+  background: var(--gray);
   color: var(--white);
 }
 
@@ -84,6 +85,7 @@ footer {
   position: relative; /* Establishes the coordinate space for the text */
   display: inline-block;
   background-image: url("../images/pepperoni-pizza.jpg");
+  z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
