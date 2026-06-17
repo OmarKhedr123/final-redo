@@ -5,11 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza Hotline | Best pizzas</title>
     <link rel="stylesheet" href="css/main.css" />
+    <style>
+      .flex-wrapper div h3 {
+        text-align: center;
+      }
+
+      .flex-wrapper img {
+        width: 25%;
+      }
+
+      :root {
+        --red: #d53535;
+      }
+    </style>
   </head>
   <body>
-    <nav id="topnav">
-      <a href="index.html">Top 3 best pizzas</a>
-      <a href="terms-of-use.html">Terms of use</a>
+    <nav id="top-nav">
+      <a href="index.html">Home</a>
+      <a href="deals-and-specials.html">Deals & Specials</a>
     </nav>
 
     <header id="image-container">
@@ -18,38 +31,76 @@
 
     <main>
       <section>
-        <h2>Top 3 Faves!</h2>
+        <h2 style="text-align: center">Top 3 Faves!</h2>
 
-        <h2 style="margin-left: 10%">THE PRIMO</h2>
-        <span class="flex-wrapper"
-          ><p style="width: 300px; margin-left: 10%">
-            How much the Pepperoni do you want on your pizza "yes" If that is
-            you then the the primo is for you!
-          </p>
-          <img src="images/ThePrimo.jpg" alt="The Primo" style="width: 400px" />
-        </span>
+        <div class="flex-wrapper">
+          <div>
+            <h3>THE PRIMO</h3>
+            <p>
+              How much the Pepperoni do you want on your pizza "yes" If that is
+              you then the the primo is for you!
+            </p>
+          </div>
+          <img src="images/ThePrimo.jpg" alt="The Primo" />
+        </div>
 
-        <h2 style="width: 400px; margin-left: 10%">
-          SUPER THIN CRUST PEPPERONI
-        </h2>
-        <span class="flex-wrapper">
-          <p style="width: 300px; margin-left: 10%">
-            Super thin crust pepperoni it the perfect for when all you want is a
-            strong taste without all the mess of the beard
-          </p>
+        <div class="flex-wrapper">
+          <div>
+            <h3>SUPER THIN CRUST PEPPERONI</h3>
+            <p>
+              Super thin crust pepperoni it the perfect for when all you want is
+              a strong taste without all the mess of the beard
+            </p>
+          </div>
           <img
             src="images/SuperThinCrustPepperoni.jpg"
             alt="Super Thin Crust Pepperoni" />
-        </span>
+        </div>
 
-        <h2 style="margin-left: 10%">PEROGY PIZZA</h2>
-        <span class="flex-wrapper">
-          <p style="width: 300px; margin-left: 10%">
-            The perogy pizza is the best combination between bread cheese and
-            taste to make you the the greatest pizza on the planet
+        <div class="flex-wrapper">
+          <div>
+            <h3>PEROGY PIZZA</h3>
+            <p>
+              The perogy pizza is the best combination between bread cheese and
+              taste to make you the the greatest pizza on the planet
+            </p>
+          </div>
+          <img
+            src="images/perogypizza.jpg"
+            alt="a perogy pizza"
+            id="perogy-image" />
+        </div>
+      </section>
+      <section>
+        <h2 style="text-align: center">Contact us today!</h2>
+        <h3 style="margin-left: 20%">Call us today</h3>
+        <div class="flex-wrapper" style="gap: 0px">
+          <p
+            style="
+              background: var(--red);
+              border-radius: 100px;
+              width: 30px;
+              text-align: center;
+            ">
+            &#9990;
           </p>
-          <img src="images/perogypizza.jpg" alt="a perogy pizza" />
-        </span>
+          <p>+12042222222</p>
+        </div>
+        <h3 style="text-align: center">Find us here</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d82398.66665041787!2d-97.25390009813!3d49.80565101403265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spizza%20hotline!5e0!3m2!1sen!2sca!4v1781723562253!5m2!1sen!2sca"
+          width="90%"
+          height="450"
+          style="
+            border: 0;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+          "
+          allowfullscreen="no"
+          loading="lazy"
+          title="Pizza Hotline Locations"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
 
@@ -58,6 +109,9 @@
       <p>
         this is not the official pizza hotline website so DO NOT take any of
         this seriosly
+      </p>
+      <p>
+        If you need to contact them, please use the information provided above.
       </p>
     </footer>
   </body>

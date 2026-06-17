@@ -1,8 +1,11 @@
+/* root lets you make a set amount of colours to use as a colour 
+palet but i mostly use it so i dont need to manulaly change all the colours if i want to change that 
+colour */
 :root {
   --black: #393737;
-  --darkered: #b71818;
+  --darkered: #b02a2a;
   --white: #e8e8e8;
-  --deepred: #e30d0d;
+  --deepred: #d43333;
   --red: #d53535;
 }
 
@@ -13,10 +16,12 @@
 body {
   font-size: 1.8rem;
   background-color: #ffeded;
+  font-family: Geneva, Tahoma, sans-serif;
 }
 
 h2 {
   font-size: 5rem;
+  background: var(--red);
 }
 
 p {
@@ -33,14 +38,14 @@ footer {
   text-align: center;
 }
 
-#topnav {
+#top-nav {
   background: var(--red);
   overflow: hidden;
   position: sticky;
   top: 0;
 }
 
-#topnav a {
+#top-nav a {
   float: left;
   color: var(--black);
   text-align: center;
@@ -49,12 +54,12 @@ footer {
   font-size: 17px;
 }
 
-#topnav a:hover {
+#top-nav a:hover {
   background: var(--darkered);
   color: var(--white);
 }
 
-#topnav a.active {
+#top-nav a.active {
   background: var(--black);
   color: var(--white);
 }
@@ -93,5 +98,12 @@ footer {
 
 .flex-wrapper {
   display: flex;
-  gap: 20%;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  margin-bottom: 3%;
+}
+
+.flex-wrapper div {
+  width: 30%;
 }
