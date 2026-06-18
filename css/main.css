@@ -20,6 +20,10 @@ body {
   font-family: Geneva, Tahoma, sans-serif;
 }
 
+h1 {
+  font-size: 6rem;
+}
+
 h2 {
   font-size: 5rem;
   background: var(--red);
@@ -70,10 +74,14 @@ footer {
   font-size: 6rem;
   text-decoration: none;
   background: rgba(57, 55, 55, 0.92);
+  /* I used this to make the element be to its closest positioned 
+  ancestor wich here i would use it with an img that has a position of relative
+  to be that ancestor */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /* this is a way to center the element */
   margin: 0;
   padding: 1.5% 2.5%;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -82,7 +90,8 @@ footer {
 }
 
 #image-container {
-  position: relative; /* Establishes the coordinate space for the text */
+  /* here is the position relative */
+  position: relative; 
   display: inline-block;
   background-image: url("../images/pepperoni-pizza.jpg");
   z-index: -1;
